@@ -4,6 +4,8 @@ require "mote"
 
 class Mote
   module Rails
+    class Engine < ::Rails::Engine
+    end
 
     class Railtie < ::Rails::Railtie
       config.app_generators.template_engine :mote
